@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andres Contreras</title>
     <!-- icon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="./img/letter-a.svg"
-    />
+    <link rel="icon" type="image/png" href="./img/letter-a.svg" />
     <!-- fontawesome -->
     <link
       rel="stylesheet"
@@ -18,15 +14,15 @@
     />
     <!-- bootstrap -->
     <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  />
-  <!-- css -->
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- css -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- presentation -->
-    <div class="presentation-container">
+    <div class="presentation-container" id="presentation-container">
       <h1>Hi, I'm <span>Andres Contreras</span>.</h1>
       <h2>I'm a software developer</h2>
       <a href="#about-me">
@@ -34,13 +30,12 @@
       </a>
     </div>
     <!-- navBar -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-custom sticky-top">
       <a class="navbar-brand" href="#">
-      
-        <img src="./img/letter-a.svg" alt="letter a" style="width:40px;">
+        <img src="./img/letter-a.svg" alt="letter a" style="width: 40px" />
       </a>
       <button
-        class="navbar-toggler"
+        class="custom-toggler navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#collapsibleNavbar"
@@ -50,22 +45,36 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link js-scroll-trigger" href="#presentation-container"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link js-scroll-trigger" href="#about-me">About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
     <!-- about me -->
     <section id="about-me">
-      <div class="title-group" style="height: 100vh">
-        <h1>about me</h1>
-        <h2>Welcome to the Website</h2>
+      <h1>About me</h1>
+      <div class="about-container">
+        <img src="./img/me.jpg" alt="Profile picture">
+        <div class='about-me-info'>
+          <h1>Who am I?</h1>
+          <span>
+            I'm Andres Contreras, a mechatronic engineer from Mexico, focused in web programming and currently working in projects of backend and frontend, I love learn new things and get new challenges.
+          </span>
+        </div>
       </div>
     </section>
     <!-- services -->
@@ -95,5 +104,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(".js-scroll-trigger").click(function () {
+        $(".navbar-collapse").collapse("hide");
+      });
+    </script>
   </body>
 </html>
