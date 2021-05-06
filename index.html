@@ -1,22 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andres Contreras</title>
-  <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=jacinto.design">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- presentation -->
-  <div class="presentation-container">
-    <h1>Hi, I'm <span>Andres Contreras</span>.</h1>
-    <h2>I'm a software developer</h2>
-    <button class="button-presentation">Know me</button>
-  </div>
-  <!--Script-->
-  <script src='script.js'></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andres Contreras</title>
+    <!-- icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/letter-a.svg"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- bootstrap -->
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- presentation -->
+    <div class="presentation-container">
+      <h1>Hi, I'm <span>Andres Contreras</span>.</h1>
+      <h2>I'm a software developer</h2>
+      <a href="#about-me">
+        <button class="button-presentation">Know me</button>
+      </a>
+    </div>
+    <!-- navBar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+      <a class="navbar-brand" href="#">
+      
+        <img src="./img/letter-a.svg" alt="letter a" style="width:40px;">
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- about me -->
+    <section id="about-me">
+      <div class="title-group" style="height: 100vh">
+        <h1>about me</h1>
+        <h2>Welcome to the Website</h2>
+      </div>
+    </section>
+    <!-- services -->
+    <section id="services">
+      <div class="title-group" style="height: 100vh">
+        <h1>Services</h1>
+        <h2>Welcome to the Website</h2>
+      </div>
+    </section>
+    <!-- projects -->
+    <section id="projects">
+      <div class="title-group" style="height: 100vh">
+        <h1>Projects</h1>
+        <h2>Welcome to the Website</h2>
+      </div>
+    </section>
+    <!-- contact me -->
+    <section id="contact">
+      <div class="title-group" style="height: 100vh">
+        <h1>Contact me</h1>
+        <h2>Welcome to the Website</h2>
+      </div>
+    </section>
+    <!--Script-->
+    <script src="script.js"></script>
+    <!-- bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
