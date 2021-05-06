@@ -33,6 +33,7 @@ section h1{
   font-size: 4rem;
   font-weight: bolder;
   margin:0 10px;
+  border-bottom: 3px solid;
 }
 
 /*presentation*/
@@ -136,7 +137,33 @@ section h1{
 .about-me-info h1{
   font-size: 2em;
   color:#457B9D;
+  border-bottom: 0px;
 }
+/*images in about*/
+.about-images-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container{
+  background: #A8DADC;
+  margin: 10px 20px;
+  border-radius: 7px;
+  text-align: center;
+}
+.image-container img{
+  width: 300px;
+  height: 300px;
+
+}
+.image-container h2{
+  color:#457B9D;
+  text-align: center;
+  font-weight: bold;
+}
+
 
 /*media query*/
 @media screen and (max-width:750px) {
