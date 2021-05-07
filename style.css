@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -354,6 +355,10 @@ body {
 }
 /*media query*/
 @media screen and (max-width: 750px) {
+  
+  html {
+    scroll-behavior:auto;
+  }
   .nav-link {
     text-align: center;
     font-size: 2.8rem;
