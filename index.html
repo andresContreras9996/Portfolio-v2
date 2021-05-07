@@ -68,66 +68,127 @@
     <section class="about-me-section" id="about-me">
       <h1>About me</h1>
       <div class="about-container">
-        <img src="./img/me.jpg" alt="Profile picture">
-        <div class='about-me-info'>
+        <img src="./img/me.jpg" alt="Profile picture" />
+        <div class="about-me-info">
           <h1>Who am I?</h1>
           <span>
-            I'm Andres Contreras, a mechatronic engineer from Mexico, focused in web programming and currently working in projects of backend and frontend, I love learn new things and get new challenges.
+            I'm Andres Contreras, a mechatronic engineer from Mexico, focused in
+            web programming and currently working in projects of backend and
+            frontend, I love learn new things and get new challenges.
           </span>
         </div>
       </div>
       <div class="about-images-container">
         <div class="image-container">
           <h2>Fast response</h2>
-          <img src="./img/fast.svg" alt="Fast response">
+          <img src="./img/fast.svg" alt="Fast response" />
         </div>
         <div class="image-container">
           <h2>Responsive design</h2>
-          <img src="./img/responsive.svg" alt="Fast response">
+          <img src="./img/responsive.svg" alt="Fast response" />
         </div>
         <div class="image-container">
           <h2>Dynamic content</h2>
-          <img src="./img/animation.svg" alt="Fast response">
+          <img src="./img/animation.svg" alt="Fast response" />
         </div>
       </div>
     </section>
     <!-- services -->
-    <section class="services-section"id="services">
+    <section class="services-section" id="services">
       <h1>Services</h1>
       <div class="box">
-        <span style='--i:1'><img src="./img/services/aws.svg" alt="aws"></span>
-        <span style='--i:2'><img src="./img/services/css3.svg" alt="css"></span>
-        <span style='--i:3'><img src="./img/services/html.svg" alt="html"></span>
-        <span style='--i:4'><img src="./img/services/js.svg" alt="js"></span>
-        <span style='--i:5'><img src="./img/services/mongo.svg" alt="mongo"></span>
-        <span style='--i:6'><img src="./img/services/mysql.svg" alt="mysql"></span>
-        <span style='--i:7'><img src="./img/services/node.svg" alt="node"></span>
-        <span style='--i:8'><img src="./img/services/react-native.svg" alt="react"></span>
+        <span style="--i: 1"
+          ><img src="./img/services/aws.svg" alt="aws"
+        /></span>
+        <span style="--i: 2"
+          ><img src="./img/services/css3.svg" alt="css"
+        /></span>
+        <span style="--i: 3"
+          ><img src="./img/services/html.svg" alt="html"
+        /></span>
+        <span style="--i: 4"><img src="./img/services/js.svg" alt="js" /></span>
+        <span style="--i: 5"
+          ><img src="./img/services/mongo.svg" alt="mongo"
+        /></span>
+        <span style="--i: 6"
+          ><img src="./img/services/mysql.svg" alt="mysql"
+        /></span>
+        <span style="--i: 7"
+          ><img src="./img/services/node.svg" alt="node"
+        /></span>
+        <span style="--i: 8"
+          ><img src="./img/services/react-native.svg" alt="react"
+        /></span>
       </div>
       <div class="services-images-container">
         <div class="image-container">
           <h2>Backend</h2>
-          <img src="./img/services/backend.svg" alt="Fast response">
+          <img src="./img/services/backend.svg" alt="Fast response" />
         </div>
         <div class="image-container">
           <h2>Frontend</h2>
-          <img src="./img/services/frontend.svg" alt="Fast response">
+          <img src="./img/services/frontend.svg" alt="Fast response" />
         </div>
       </div>
     </section>
+
     <!-- projects -->
-    <section class=project-section id="projects">
+    <section class="project-section" id="projects">
       <h1>Projects</h1>
-      <p>Here is a look of my projects</p>
       <div class="projects-container">
         <div class="project">
           <div class="project-img">
-            <img src="./img/services/css3.svg" alt="my first project">
+            <img src="./img/mosaic.png" alt="my first project" />
           </div>
           <div class="project-info">
             <h1>Photomosaic</h1>
+            <p>
+              I worked with a team during my time in Nearsoft on this project, it consists of a webpage that makes a photomosaic with your
+              profile picture of google account, I was in charge of the section dedicated to sending this picture to other users, using an
+               SMTP server using Django, also use React for the frontend.
+            </p>
+            <div class="project-tec-container">
+              <img src="./img/services/react-native.svg" alt="" />
+              <img src="./img/services/python.svg" alt="" />
+              <img src="./img/services/js.svg" alt="" />
+            </div>
           </div>
         </div>
+        <div class="project">
+          <div class="project-img">
+            <img src="./img/slack.png" alt="my first project" />
+          </div>
+          <div class="project-info">
+            <h1>Slackbot</h1>
+            <p>
+              Another project I worked with a team during my time in Nearsoft, it consists on a bot of the platform Slack, that read different files 
+            of logistic, to respond to the user, in this project I worked with Node Js to make the backend with the Slack API and the
+             framework Bolt.
+            </p>
+            <div class="project-tec-container">
+              <img src="./img/services/js.svg" alt="" />
+              <img src="./img/services/node.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-img">
+            <img src="./img/plate.png" alt="my first project" />
+          </div>
+          <div class="project-info">
+            <h1>Plate detection</h1>
+            <p>
+              I worked on this project during university, it consists of a program capable to 
+            detect plates of vehicles at the gate of a parking lot, and register the number, 
+            I used c++ and the library OpenCV.
+            </p>
+            <div class="project-tec-container">
+              <img src="./img/services/cplusplus.svg" alt="" />
+              <img src="./img/services/opencv-icon.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        
       </div>
     </section>
     <!-- contact me -->
