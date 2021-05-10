@@ -155,6 +155,7 @@ body {
 .about-me-info p{
   margin: 10px 22px;
   text-align: left;
+  font-size: 1.2rem;
 }
 
 
@@ -190,7 +191,7 @@ body {
   font-size: 1.4rem;
   color: #457b9d;
   text-align: center;
-  font-weight: bold;
+  font-weight:bolder;
 }
 
 
@@ -211,16 +212,17 @@ body {
 .services-section h1{
   font-family: Raleway;
   color: #1d3557;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bolder;
   margin: 0 10px;
   border-bottom: 3px solid;
+  word-break: break-all;
 }
 .box{
   margin: 120px 0;
   position:relative;
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   transform-style:preserve-3d ;
   animation: animate 20s linear infinite;
 }
@@ -240,7 +242,7 @@ body {
   height: 100%;
   transform-origin:center;
   transform-style:preserve-3d ;
-  transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+  transform: rotateY(calc(var(--i)*45deg)) translateZ(25vw);
   -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
   background:rgb(241, 250, 238);
   border-radius: 7px;
@@ -276,10 +278,11 @@ body {
 .project-section h1{
   font-family: Raleway;
   color: #1d3557;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bolder;
   margin: 10px 10px;
   border-bottom: 3px solid;
+  overflow-wrap: break-word;
 }
 .projects-container{
   width: 80%;
@@ -291,6 +294,7 @@ body {
 }
 .project{
   width: 100%;
+  
   background:  #a8dadc;
   margin: 20px 30px;
   border-radius: 7px;
@@ -302,10 +306,11 @@ body {
   padding: 20px 50px;
 }
 .project-img{
-  width: 350px;
-  min-width: 350px;
-  height: auto;
+  width: 280px;
+  min-width: 250px;
+  height: 280px;
   padding: 10px 10px;
+  text-align: center;
 }
 .project-img img{
   width: 100%;
@@ -316,7 +321,7 @@ body {
 }
 
 .project-info{
-  text-align: center;
+  text-align: left;
   font-size: 1.4em;
   font-weight: 400;
 }
@@ -326,13 +331,15 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   
+  max-width: 100vw;
   
 }
 .project-tec-container img{
   width: 80px;
   height: auto;
-  margin: 0 10px;
+  margin: 10px 10px;
   background: rgba(	69, 123, 157,.15);
   border-radius:7px ;
 }
@@ -346,10 +353,16 @@ body {
   align-items: center;
 }
 .project-info h1 {
-  font-size: 2em;
+  font-size: 2rem;
   color: #457b9d;
   border-bottom: 0px;
   font-weight: bolder;
+}
+.project-info p{
+  margin: 10px 22px;
+  text-align: left;
+  font-size: 1.2rem;
+  overflow-wrap:break-word;
 }
 
 /*contact section*/
@@ -366,11 +379,12 @@ body {
 .contact-section h1{
   font-family: Raleway;
   color: #1d3557;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bolder;
   margin: 10px 10px;
   border-bottom: 3px solid;
   text-align: center;
+  overflow-wrap: break-word;
 }
 .social-icons{
   width: 100%;
@@ -378,6 +392,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .social-icons img{
   width: 4rem;
@@ -428,6 +443,10 @@ body {
     height: 300px;
     border-radius: 10px;
   }
+  .about-me-info p{
+ 
+    font-size: 1.4rem;
+  }
   .image-container{
     display: flex;
     flex-direction: column;
@@ -452,7 +471,7 @@ body {
     animation: animate 20s linear infinite;
   }
   .box span{
-    transform: rotateY(calc(var(--i)*45deg)) translateZ(150px);
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(45vw);
   }
   .box span img{
     position: absolute;
@@ -471,9 +490,22 @@ body {
     width: 90vw;
   }
   .project-img{
-    width: 320px;
-    min-width: 320px;
-    height: auto;
+    width: auto;
+    height: 300px;
+    max-width: 90vw;
     position: relative;
+  }
+  .project-img img{
+    width: 80vw;
+  }
+  .social-icons{
+ 
+    display: flex;
+    flex-wrap: wrap;
+   margin-bottom: 20px;
+  }
+  .social-icons img{
+ 
+  padding:10px 10px ;
   }
 }
