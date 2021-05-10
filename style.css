@@ -423,8 +423,11 @@ body {
 
   .nav-link {
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     margin: 20px 0px;
+  }
+  .navbar-collapse{
+    min-height: 100vh;
   }
   /*about section*/
   .about-container {
