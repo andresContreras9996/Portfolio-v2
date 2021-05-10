@@ -129,6 +129,7 @@ body {
   font-family: Raleway, sans-serif;
   box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
   background-color: #a8dadc;
+  
 }
 .about-container img {
   width: auto;
@@ -168,16 +169,22 @@ body {
 
 .image-container {
   background: #a8dadc;
-  margin: 10px 20px;
+  margin: 10px 30px;
   padding: 20px 10px;
   border-radius: 7px;
   text-align: center;
   box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+  max-width: 90vw;
 }
 .image-container img {
-  width: 250px;
-  height: 250px;
+  width: 260px;
+  height: 260px;
+  padding:10px 10px;
   margin:10px 10px;
+  background: rgba(241, 250, 238,.4);
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  max-width: 90vw;
 }
 .image-container h2 {
   font-size: 1.4rem;
@@ -420,6 +427,19 @@ body {
     max-width: 80vw;
     height: 300px;
     border-radius: 10px;
+  }
+  .image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .image-container img{
+    width: 350px;
+    height: 350px;
+    max-width: 70vw;
+    max-height: 60vh;
   }
 
 
